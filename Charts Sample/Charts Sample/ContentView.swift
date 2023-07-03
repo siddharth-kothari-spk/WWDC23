@@ -20,7 +20,9 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        VStack {
+        
+        TabView {
+            // Vertical Bar
             Chart {
                 ForEach(coffeeSales, id: \.name) { coffee in
                     BarMark(
@@ -30,6 +32,10 @@ struct ContentView: View {
                     .foregroundStyle(by: .value("Type", coffee.name))
                     //.clipShape(Circle())
                 }
+            }
+            .tabItem {
+                //Image(systemName: "house.fill")
+                Text("Vertical Bar")
             }
         }
         .padding()
