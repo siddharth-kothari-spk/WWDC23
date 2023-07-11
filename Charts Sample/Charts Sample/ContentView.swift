@@ -112,8 +112,9 @@ struct ContentView: View {
             // Sector mark
             Chart {
                 ForEach(coffeeSales, id: \.name) { coffee in
-                    SectorMark(angle:
-                            .value("Cup", coffee.count)
+                    SectorMark(
+                        angle:.value("Cup", coffee.count),
+                        angularInset: 1.0
                     ).foregroundStyle(by: .value("Type", coffee.name))
                 }
             }
