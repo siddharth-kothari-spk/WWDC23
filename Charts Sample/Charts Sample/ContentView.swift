@@ -126,6 +126,23 @@ struct ContentView: View {
             }
             .tabItem { Text("Sector Mark") }
             
+            // Donut mark
+            Chart {
+                ForEach(coffeeSales, id: \.name) { coffee in
+                    SectorMark(
+                        angle:.value("Cup", coffee.count),
+                        innerRadius: .ratio(0.70),
+                        angularInset: 1.0
+                    ).foregroundStyle(by: .value("Type", coffee.name))
+                    .annotation(position: .overlay) {
+                            Text("\(coffee.count)")
+                                .font(.headline)
+                                .foregroundStyle(.white)
+                        }
+                }
+            }
+            .tabItem { Text("Donut Mark") }
+            
         }
         .padding()
     }
