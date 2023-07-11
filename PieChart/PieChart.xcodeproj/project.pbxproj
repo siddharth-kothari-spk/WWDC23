@@ -15,6 +15,7 @@
 		B1730F112A5D68AD00D2EEE2 /* PieChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F102A5D68AD00D2EEE2 /* PieChartUITests.swift */; };
 		B1730F132A5D68AD00D2EEE2 /* PieChartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F122A5D68AD00D2EEE2 /* PieChartUITestsLaunchTests.swift */; };
 		B1730F202A5D69A200D2EEE2 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F1F2A5D69A200D2EEE2 /* ChartData.swift */; };
+		B1730F232A5D6DAA00D2EEE2 /* BarVsPie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F222A5D6DAA00D2EEE2 /* BarVsPie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B1730F102A5D68AD00D2EEE2 /* PieChartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartUITests.swift; sourceTree = "<group>"; };
 		B1730F122A5D68AD00D2EEE2 /* PieChartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1730F1F2A5D69A200D2EEE2 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		B1730F222A5D6DAA00D2EEE2 /* BarVsPie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarVsPie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		B1730EF32A5D68AC00D2EEE2 /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
+				B1730F212A5D6D9200D2EEE2 /* Views */,
 				B1730EF42A5D68AC00D2EEE2 /* PieChartApp.swift */,
 				B1730EF62A5D68AC00D2EEE2 /* ContentView.swift */,
 				B1730EF82A5D68AD00D2EEE2 /* Assets.xcassets */,
@@ -130,6 +133,14 @@
 				B1730F122A5D68AD00D2EEE2 /* PieChartUITestsLaunchTests.swift */,
 			);
 			path = PieChartUITests;
+			sourceTree = "<group>";
+		};
+		B1730F212A5D6D9200D2EEE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1730F222A5D6DAA00D2EEE2 /* BarVsPie.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1730EF72A5D68AC00D2EEE2 /* ContentView.swift in Sources */,
+				B1730F232A5D6DAA00D2EEE2 /* BarVsPie.swift in Sources */,
 				B1730F202A5D69A200D2EEE2 /* ChartData.swift in Sources */,
 				B1730EF52A5D68AC00D2EEE2 /* PieChartApp.swift in Sources */,
 			);
