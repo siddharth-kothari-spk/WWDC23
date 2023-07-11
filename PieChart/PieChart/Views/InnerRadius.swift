@@ -20,6 +20,11 @@ struct InnerRadius: View {
                     innerRadius: .ratio(0.50),
                     angularInset: 2
                 )
+                .annotation(position: .overlay, content: {
+                    Text("\(sale.count)")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                })
                 .foregroundStyle(by: .value("Model", sale.model))
             }
         }

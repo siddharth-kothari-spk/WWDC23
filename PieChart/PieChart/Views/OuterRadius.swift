@@ -19,6 +19,11 @@ struct OuterRadius: View {
                     outerRadius: sale.model == "iPhone 14" ? 150 : 120,
                     angularInset: 2
                 )
+                .annotation(position: .overlay, content: {
+                    Text("\(sale.count)")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                })
                 .foregroundStyle(by: .value("Model", sale.model))
             }
         }
