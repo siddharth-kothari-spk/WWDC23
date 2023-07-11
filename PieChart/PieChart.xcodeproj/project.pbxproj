@@ -18,6 +18,7 @@
 		B1730F232A5D6DAA00D2EEE2 /* BarVsPie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F222A5D6DAA00D2EEE2 /* BarVsPie.swift */; };
 		B1730F252A5D74E300D2EEE2 /* AngularInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F242A5D74E300D2EEE2 /* AngularInset.swift */; };
 		B1730F272A5D7ABF00D2EEE2 /* OuterRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F262A5D7ABF00D2EEE2 /* OuterRadius.swift */; };
+		B1730F292A5D7D8600D2EEE2 /* InnerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F282A5D7D8600D2EEE2 /* InnerRadius.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B1730F222A5D6DAA00D2EEE2 /* BarVsPie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarVsPie.swift; sourceTree = "<group>"; };
 		B1730F242A5D74E300D2EEE2 /* AngularInset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularInset.swift; sourceTree = "<group>"; };
 		B1730F262A5D7ABF00D2EEE2 /* OuterRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuterRadius.swift; sourceTree = "<group>"; };
+		B1730F282A5D7D8600D2EEE2 /* InnerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerRadius.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				B1730F222A5D6DAA00D2EEE2 /* BarVsPie.swift */,
 				B1730F242A5D74E300D2EEE2 /* AngularInset.swift */,
 				B1730F262A5D7ABF00D2EEE2 /* OuterRadius.swift */,
+				B1730F282A5D7D8600D2EEE2 /* InnerRadius.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				B1730F272A5D7ABF00D2EEE2 /* OuterRadius.swift in Sources */,
 				B1730F232A5D6DAA00D2EEE2 /* BarVsPie.swift in Sources */,
 				B1730F202A5D69A200D2EEE2 /* ChartData.swift in Sources */,
+				B1730F292A5D7D8600D2EEE2 /* InnerRadius.swift in Sources */,
 				B1730EF52A5D68AC00D2EEE2 /* PieChartApp.swift in Sources */,
 				B1730F252A5D74E300D2EEE2 /* AngularInset.swift in Sources */,
 			);

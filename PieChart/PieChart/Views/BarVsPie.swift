@@ -20,6 +20,11 @@ struct BarVsPie: View {
                         x: .value("Model", sale.model),
                         y: .value("Count", sale.count)
                     )
+                    .annotation(position: .top, content: {
+                        Text("\(sale.count)")
+                            .font(.headline)
+                            .foregroundStyle(.black)
+                    })
                     .foregroundStyle(by: .value("Model", sale.model))
                 }
             }
@@ -31,6 +36,11 @@ struct BarVsPie: View {
                     SectorMark(
                         angle: .value("Count", sale.count)
                     )
+                    .annotation(position: .overlay, content: {
+                        Text("\(sale.count)")
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                    })
                     .foregroundStyle(by: .value("Model", sale.model))
                 }
             }

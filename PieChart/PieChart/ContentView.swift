@@ -25,6 +25,11 @@ struct ContentView: View {
             .tabItem {
                 Text("OuterRadius")
             }
+            
+            InnerRadius()
+            .tabItem {
+                Text("InnerRadius")
+            }
         }
         .padding()
     }
