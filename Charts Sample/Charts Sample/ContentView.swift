@@ -139,6 +139,7 @@ struct ContentView: View {
                                 .font(.headline)
                                 .foregroundStyle(.white)
                         }
+                    .cornerRadius(5.0)
                 }
             }
             .tabItem { Text("Donut Mark") }
