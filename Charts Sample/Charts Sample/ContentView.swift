@@ -69,14 +69,13 @@ struct ContentView: View {
             Chart {
                 ForEach(profitData, id: \.department) { profit in
                     BarMark(
-                        x: .value("Cup", profit.profit)
+                        x: .value("Cup", profit.profit),
+                        stacking: .normalized
                     )
                     .foregroundStyle(by: .value("Type", profit.department))
-                    //.clipShape(Circle())
                 }
             }.frame(width: 400, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             .tabItem {
-                //Image(systemName: "house.fill")
                 Text("X axis")
             }
             
@@ -84,14 +83,13 @@ struct ContentView: View {
             Chart {
                 ForEach(profitData, id: \.department) { profit in
                     BarMark(
-                        y: .value("Cup", profit.profit)
+                        y: .value("Cup", profit.profit),
+                        stacking: .normalized
                     )
                     .foregroundStyle(by: .value("Type", profit.department))
-                    //.clipShape(Circle())
                 }
             }.frame(width: 300, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             .tabItem {
-                //Image(systemName: "house.fill")
                 Text("Y axis")
             }
 
@@ -105,13 +103,21 @@ struct ContentView: View {
                          y: .value("Job", job.job)
                              )
                     .foregroundStyle(by: .value("Type", job.job))
-                    //.clipShape(Circle())
                 }
             }
             .tabItem {
-                //Image(systemName: "house.fill")
                 Text("Interval chart")
             }
+            
+            // Sector mark
+            Chart {
+                ForEach(coffeeSales, id: \.name) { coffee in
+                    SectorMark(angle:
+                            .value("Cup", coffee.count)
+                    ).foregroundStyle(by: .value("Type", coffee.name))
+                }
+            }
+            .tabItem { Text("Sector Mark") }
             
         }
         .padding()
