@@ -21,7 +21,10 @@ struct ContentView: View {
                 Text("AngularInset")
             }
             
-            
+            OuterRadius()
+            .tabItem {
+                Text("OuterRadius")
+            }
         }
         .padding()
     }
