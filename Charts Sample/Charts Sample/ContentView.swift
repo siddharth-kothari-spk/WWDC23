@@ -25,10 +25,10 @@ struct ContentView: View {
     private var coffeeSales = [
         (name: "Americano", count: 120),
         (name: "Cappuccino", count: 234),
-        (name: "Espresso", count: 62),
+        (name: "Espresso", count: 92),
         (name: "Latte", count: 625),
         (name: "Mocha", count: 320),
-        (name: "Affogato", count: 50)
+        (name: "Affogato", count: 80)
     ]
     
     private var profitData: [Profit] = [
@@ -117,6 +117,11 @@ struct ContentView: View {
                         outerRadius: coffee.name == "Mocha" ? 150 : 120,
                         angularInset: 1.0
                     ).foregroundStyle(by: .value("Type", coffee.name))
+                    .annotation(position: .overlay) {
+                            Text("\(coffee.count)")
+                                .font(.headline)
+                                .foregroundStyle(.white)
+                        }
                 }
             }
             .tabItem { Text("Sector Mark") }
