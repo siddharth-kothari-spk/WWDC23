@@ -114,6 +114,7 @@ struct ContentView: View {
                 ForEach(coffeeSales, id: \.name) { coffee in
                     SectorMark(
                         angle:.value("Cup", coffee.count),
+                        outerRadius: coffee.name == "Mocha" ? 150 : 120,
                         angularInset: 1.0
                     ).foregroundStyle(by: .value("Type", coffee.name))
                 }
