@@ -142,6 +142,10 @@ struct ContentView: View {
                     .cornerRadius(5.0)
                 }
             }
+            .frame(height: 400)
+            .chartBackground(content: { proxy in
+                Text("☕️").font(.system(size: 80))
+            })
             .tabItem { Text("Donut Mark") }
             
         }
