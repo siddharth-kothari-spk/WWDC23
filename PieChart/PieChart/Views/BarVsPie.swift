@@ -15,23 +15,23 @@ struct BarVsPie: View {
     var body: some View {
         VStack(content: {
             Chart {
-                ForEach(mobileSales, id: \.model) { mobile in
+                ForEach(mobileSales, id: \.model) { sale in
                     BarMark(
-                        x: .value("Model", mobile.model),
-                        y: .value("Count", mobile.count)
+                        x: .value("Model", sale.model),
+                        y: .value("Count", sale.count)
                     )
-                    .foregroundStyle(by: .value("Model", mobile.model))
+                    .foregroundStyle(by: .value("Model", sale.model))
                 }
             }
             
             Spacer()
             
             Chart {
-                ForEach(mobileSales, id: \.model) { mobile in
+                ForEach(mobileSales, id: \.model) { sale in
                     SectorMark(
-                        angle: .value("Count", mobile.count)
+                        angle: .value("Count", sale.count)
                     )
-                    .foregroundStyle(by: .value("Model", mobile.model))
+                    .foregroundStyle(by: .value("Model", sale.model))
                 }
             }
         })
