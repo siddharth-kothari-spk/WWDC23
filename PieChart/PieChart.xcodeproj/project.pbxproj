@@ -14,6 +14,7 @@
 		B1730F072A5D68AD00D2EEE2 /* PieChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F062A5D68AD00D2EEE2 /* PieChartTests.swift */; };
 		B1730F112A5D68AD00D2EEE2 /* PieChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F102A5D68AD00D2EEE2 /* PieChartUITests.swift */; };
 		B1730F132A5D68AD00D2EEE2 /* PieChartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F122A5D68AD00D2EEE2 /* PieChartUITestsLaunchTests.swift */; };
+		B1730F202A5D69A200D2EEE2 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1730F1F2A5D69A200D2EEE2 /* ChartData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		B1730F0C2A5D68AD00D2EEE2 /* PieChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PieChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1730F102A5D68AD00D2EEE2 /* PieChartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartUITests.swift; sourceTree = "<group>"; };
 		B1730F122A5D68AD00D2EEE2 /* PieChartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1730F1F2A5D69A200D2EEE2 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				B1730EF82A5D68AD00D2EEE2 /* Assets.xcassets */,
 				B1730EFA2A5D68AD00D2EEE2 /* PieChart.entitlements */,
 				B1730EFB2A5D68AD00D2EEE2 /* Preview Content */,
+				B1730F1F2A5D69A200D2EEE2 /* ChartData.swift */,
 			);
 			path = PieChart;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1730EF72A5D68AC00D2EEE2 /* ContentView.swift in Sources */,
+				B1730F202A5D69A200D2EEE2 /* ChartData.swift in Sources */,
 				B1730EF52A5D68AC00D2EEE2 /* PieChartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
