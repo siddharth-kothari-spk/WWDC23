@@ -65,35 +65,6 @@ struct ContentView: View {
                 Text("Vertical Bar")
             }
             
-            // only x axis:
-            Chart {
-                ForEach(profitData, id: \.department) { profit in
-                    BarMark(
-                        x: .value("Cup", profit.profit),
-                        stacking: .normalized
-                    )
-                    .foregroundStyle(by: .value("Type", profit.department))
-                }
-            }.frame(width: 400, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            .tabItem {
-                Text("X axis")
-            }
-            
-            // only y axis:
-            Chart {
-                ForEach(profitData, id: \.department) { profit in
-                    BarMark(
-                        y: .value("Cup", profit.profit),
-                        stacking: .normalized
-                    )
-                    .foregroundStyle(by: .value("Type", profit.department))
-                }
-            }.frame(width: 300, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            .tabItem {
-                Text("Y axis")
-            }
-
-            
             // Interval chart:
             Chart {
                 ForEach(jobData, id: \.job) { job in
@@ -147,6 +118,35 @@ struct ContentView: View {
                 Text("☕️").font(.system(size: 80))
             })
             .tabItem { Text("Donut Mark") }
+            
+            
+            // only x axis:
+            Chart {
+                ForEach(profitData, id: \.department) { profit in
+                    BarMark(
+                        x: .value("Cup", profit.profit),
+                        stacking: .normalized
+                    )
+                    .foregroundStyle(by: .value("Type", profit.department))
+                }
+            }.frame(width: 400, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .tabItem {
+                Text("X axis")
+            }
+            
+            // only y axis:
+            Chart {
+                ForEach(profitData, id: \.department) { profit in
+                    BarMark(
+                        y: .value("Cup", profit.profit),
+                        stacking: .normalized
+                    )
+                    .foregroundStyle(by: .value("Type", profit.department))
+                }
+            }.frame(width: 300, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .tabItem {
+                Text("Y axis")
+            }
             
         }
         .padding()
