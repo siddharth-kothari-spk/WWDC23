@@ -23,6 +23,7 @@ struct SheetView: View {
         .padding()
         .interactiveDismissDisabled() // user can not dismiss the sheet view by swiping it down
         .presentationDetents([.height(200), .large]) // PresentationDetent : A type that represents a height where a sheet naturally rests.
+        .presentationBackground(.regularMaterial) // ShapeStyle: A color or pattern to use when rendering a shape.
     }
 }
 
