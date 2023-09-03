@@ -15,6 +15,7 @@
 		B1D450B92AA378E500104199 /* MapKitSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450B82AA378E500104199 /* MapKitSampleUITests.swift */; };
 		B1D450BB2AA378E500104199 /* MapKitSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450BA2AA378E500104199 /* MapKitSampleUITestsLaunchTests.swift */; };
 		B1D450C82AA379E700104199 /* SearchableMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450C72AA379E700104199 /* SearchableMap.swift */; };
+		B1D450CA2AA449AA00104199 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450C92AA449AA00104199 /* SheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B1D450B82AA378E500104199 /* MapKitSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitSampleUITests.swift; sourceTree = "<group>"; };
 		B1D450BA2AA378E500104199 /* MapKitSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1D450C72AA379E700104199 /* SearchableMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableMap.swift; sourceTree = "<group>"; };
+		B1D450C92AA449AA00104199 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				B1D4509D2AA378E400104199 /* MapKitSampleApp.swift */,
 				B1D4509F2AA378E400104199 /* ContentView.swift */,
 				B1D450C72AA379E700104199 /* SearchableMap.swift */,
+				B1D450C92AA449AA00104199 /* SheetView.swift */,
 				B1D450A12AA378E500104199 /* Assets.xcassets */,
 				B1D450A32AA378E500104199 /* Preview Content */,
 			);
@@ -262,6 +265,7 @@
 			files = (
 				B1D450A02AA378E400104199 /* ContentView.swift in Sources */,
 				B1D450C82AA379E700104199 /* SearchableMap.swift in Sources */,
+				B1D450CA2AA449AA00104199 /* SheetView.swift in Sources */,
 				B1D4509E2AA378E400104199 /* MapKitSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
