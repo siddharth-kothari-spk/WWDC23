@@ -21,6 +21,7 @@ struct SheetView: View {
             Spacer()
         }
         .padding()
+        .interactiveDismissDisabled() // user can not dismiss the sheet view by swiping it down
     }
 }
 
