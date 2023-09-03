@@ -18,6 +18,7 @@ struct SheetView: View {
                 TextField("Search for a restaurant", text: $search)
                     .autocorrectionDisabled()
             }).modifier(TextFieldGrayBackgroundColor())// A modifier that you apply to a view or another view modifier, producing a different version of the original value.
+            Spacer()
         }
         .padding()
     }
