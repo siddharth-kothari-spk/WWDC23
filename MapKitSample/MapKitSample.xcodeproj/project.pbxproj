@@ -17,6 +17,7 @@
 		B1D450C82AA379E700104199 /* SearchableMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450C72AA379E700104199 /* SearchableMap.swift */; };
 		B1D450CA2AA449AA00104199 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450C92AA449AA00104199 /* SheetView.swift */; };
 		B1D450CC2AA44B3300104199 /* TextFieldGrayBackgroundColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450CB2AA44B3300104199 /* TextFieldGrayBackgroundColorModifier.swift */; };
+		B1D450D22AA4B52200104199 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450D12AA4B52200104199 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B1D450C72AA379E700104199 /* SearchableMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableMap.swift; sourceTree = "<group>"; };
 		B1D450C92AA449AA00104199 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		B1D450CB2AA44B3300104199 /* TextFieldGrayBackgroundColorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldGrayBackgroundColorModifier.swift; sourceTree = "<group>"; };
+		B1D450D12AA4B52200104199 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +102,12 @@
 		B1D4509C2AA378E400104199 /* MapKitSample */ = {
 			isa = PBXGroup;
 			children = (
+				B1D450D02AA4B50E00104199 /* Location */,
+				B1D450CF2AA4B50000104199 /* Helpers */,
+				B1D450CE2AA4B4EA00104199 /* Views */,
+				B1D450CD2AA4B4DB00104199 /* Map */,
 				B1D4509D2AA378E400104199 /* MapKitSampleApp.swift */,
 				B1D4509F2AA378E400104199 /* ContentView.swift */,
-				B1D450C72AA379E700104199 /* SearchableMap.swift */,
-				B1D450C92AA449AA00104199 /* SheetView.swift */,
-				B1D450CB2AA44B3300104199 /* TextFieldGrayBackgroundColorModifier.swift */,
 				B1D450A12AA378E500104199 /* Assets.xcassets */,
 				B1D450A32AA378E500104199 /* Preview Content */,
 			);
@@ -134,6 +137,38 @@
 				B1D450BA2AA378E500104199 /* MapKitSampleUITestsLaunchTests.swift */,
 			);
 			path = MapKitSampleUITests;
+			sourceTree = "<group>";
+		};
+		B1D450CD2AA4B4DB00104199 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B1D450C72AA379E700104199 /* SearchableMap.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		B1D450CE2AA4B4EA00104199 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1D450C92AA449AA00104199 /* SheetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1D450CF2AA4B50000104199 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B1D450CB2AA44B3300104199 /* TextFieldGrayBackgroundColorModifier.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B1D450D02AA4B50E00104199 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				B1D450D12AA4B52200104199 /* LocationService.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +305,7 @@
 				B1D450A02AA378E400104199 /* ContentView.swift in Sources */,
 				B1D450C82AA379E700104199 /* SearchableMap.swift in Sources */,
 				B1D450CA2AA449AA00104199 /* SheetView.swift in Sources */,
+				B1D450D22AA4B52200104199 /* LocationService.swift in Sources */,
 				B1D4509E2AA378E400104199 /* MapKitSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
