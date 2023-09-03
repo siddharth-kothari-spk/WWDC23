@@ -23,8 +23,10 @@ struct SheetView: View {
         .padding()
         .interactiveDismissDisabled() // user can not dismiss the sheet view by swiping it down
         .presentationDetents([.height(200), .large]) // PresentationDetent : A type that represents a height where a sheet naturally rests.
-        .presentationBackground(.regularMaterial) // ShapeStyle: A color or pattern to use when rendering a shape.
-        .presentationBackgroundInteraction(.enabled(upThrough: .large)) // PresentationBackgroundInteraction: The kinds of interaction available to views behind a presentation.
+        .presentationBackground(.regularMaterial) // sheet view has a regular material background, giving it a nice blur effect
+        // ShapeStyle: A color or pattern to use when rendering a shape.
+        .presentationBackgroundInteraction(.enabled(upThrough: .large)) // sheet view's background is interactive, meaning that the user can interact with the map view behind it
+        // PresentationBackgroundInteraction: The kinds of interaction available to views behind a presentation.
     }
 }
 
