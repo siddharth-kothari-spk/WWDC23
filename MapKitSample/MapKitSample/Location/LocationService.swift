@@ -11,7 +11,7 @@ import MapKit
 
 @Observable
 class LocationService: NSObject {
-    private let completer: MKLocalSearchCompleter
+    private let completer: MKLocalSearchCompleter // As opposed to its MKLocalSearch counterpart, MKLocalSearchCompleter has no rate limit, so you can update the queryFragment property as often as you want and there is no need to throttle the requests yourself.
     
     var completions = [SearchCompletions]()
     

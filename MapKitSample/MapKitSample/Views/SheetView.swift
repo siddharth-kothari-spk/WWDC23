@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct SheetView: View {
+    @State private var locationService = LocationService(completer: .init()) // new state property to hold the location service instance
     @State private var search: String = ""
     
     var body: some View {
@@ -19,6 +20,20 @@ struct SheetView: View {
                     .autocorrectionDisabled()
             }).modifier(TextFieldGrayBackgroundColor())// A modifier that you apply to a view or another view modifier, producing a different version of the original value.
             Spacer()
+            
+            List {
+                ForEach(locationService.completions) { completion in
+                    Button(action: {}) {
+                        VStack(alignment: .leading, spacing: 4.0, content: {
+                            Text(completion.title)
+                                .font(.headline)
+                                .fontDesign(.rounded)
+                            Text(completion.subTitle)
+                        })
+                    }
+                    
+                }
+            }
         }
         .padding()
         .interactiveDismissDisabled() // user can not dismiss the sheet view by swiping it down
