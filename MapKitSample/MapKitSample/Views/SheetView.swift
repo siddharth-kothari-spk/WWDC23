@@ -31,9 +31,11 @@ struct SheetView: View {
                             Text(completion.subTitle)
                         })
                     }
-                    
+                    .listRowBackground(Color.clear) // set the row background to .clear to remove the default background styles
                 }
             }
+            .listStyle(.plain)
+            .scrollContentBackground(.hidden) // set the list style to .plain and the scrollContentBackground to .hidden to remove the default list styles
         }
         .padding()
         .interactiveDismissDisabled() // user can not dismiss the sheet view by swiping it down
