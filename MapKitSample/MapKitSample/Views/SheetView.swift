@@ -29,6 +29,10 @@ struct SheetView: View {
                                 .font(.headline)
                                 .fontDesign(.rounded)
                             Text(completion.subTitle)
+                            if let url = completion.url {
+                                Link(url.absoluteString, destination: url)
+                                    .lineLimit(1)
+                            }
                         })
                     }
                     .listRowBackground(Color.clear) // set the row background to .clear to remove the default background styles
