@@ -72,6 +72,6 @@ struct SheetView: View {
     }
 }
 
-#Preview {
-    SheetView()
-}
+//#Preview {
+//    SheetView(searchResults: <#T##Binding<[SearchResults]>#>)
+//}
