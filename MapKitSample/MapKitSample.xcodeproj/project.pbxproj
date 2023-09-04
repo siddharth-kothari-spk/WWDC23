@@ -19,6 +19,7 @@
 		B1D450CC2AA44B3300104199 /* TextFieldGrayBackgroundColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450CB2AA44B3300104199 /* TextFieldGrayBackgroundColorModifier.swift */; };
 		B1D450D22AA4B52200104199 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450D12AA4B52200104199 /* LocationService.swift */; };
 		B1D450D52AA586B900104199 /* SearchCompletions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450D42AA586B900104199 /* SearchCompletions.swift */; };
+		B1D450D72AA5E38F00104199 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D450D62AA5E38F00104199 /* SearchResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B1D450CB2AA44B3300104199 /* TextFieldGrayBackgroundColorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldGrayBackgroundColorModifier.swift; sourceTree = "<group>"; };
 		B1D450D12AA4B52200104199 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		B1D450D42AA586B900104199 /* SearchCompletions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCompletions.swift; sourceTree = "<group>"; };
+		B1D450D62AA5E38F00104199 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				B1D450D42AA586B900104199 /* SearchCompletions.swift */,
+				B1D450D62AA5E38F00104199 /* SearchResults.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				B1D450CA2AA449AA00104199 /* SheetView.swift in Sources */,
 				B1D450D22AA4B52200104199 /* LocationService.swift in Sources */,
 				B1D450D52AA586B900104199 /* SearchCompletions.swift in Sources */,
+				B1D450D72AA5E38F00104199 /* SearchResults.swift in Sources */,
 				B1D4509E2AA378E400104199 /* MapKitSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
