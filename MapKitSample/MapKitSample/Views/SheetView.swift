@@ -37,6 +37,9 @@ struct SheetView: View {
             .listStyle(.plain)
             .scrollContentBackground(.hidden) // set the list style to .plain and the scrollContentBackground to .hidden to remove the default list styles
         }
+        .onChange(of: search) {
+            locationService.update(queryFragment: search)
+        }
         .padding()
         .interactiveDismissDisabled() // user can not dismiss the sheet view by swiping it down
         .presentationDetents([.height(200), .large]) // PresentationDetent : A type that represents a height where a sheet naturally rests.
