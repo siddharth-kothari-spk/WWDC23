@@ -20,6 +20,11 @@ class LocationService: NSObject {
         super.init()
         self.completer.delegate = self
     }
+    
+    func update(queryFragment: String) {
+        completer.resultTypes = .pointOfInterest
+        completer.queryFragment = queryFragment
+    }
 }
 
 extension LocationService: MKLocalSearchCompleterDelegate {
