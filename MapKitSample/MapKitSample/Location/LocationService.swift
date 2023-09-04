@@ -46,3 +46,25 @@ extension LocationService: MKLocalSearchCompleterDelegate {
         
     }
 }
+
+
+extension LocationService {
+    func search(with query: String, coordinate: CLLocationCoordinate2D? = nil) async throws -> [SearchResults] {
+        let mapKitRequest = MKLocalSearch.Request()
+        mapKitRequest.naturalLanguageQuery = query
+        mapKitRequest.resultTypes = .pointOfInterest
+        if let coordinate {
+            mapKitRequest.region = .init(.init(origin: .init(coordinate), size: .init(width: 1, height: 1)))
+            //MKCoordinateRegion(MKMapRect(origin: MKMapPoint(coordinate), size: MKMapSize(width: 1, height: 1)))
+        }
+        let search = MKLocalSearch(request: mapKitRequest)
+        let response = try await search.start()
+        
+        return response.mapItems.compactMap { mapItem in
+            guard let location = mapItem.placemark.location?.coordinate else {
+                return nil
+            }
+            return .init(location: location)
+        }
+    }
+}
