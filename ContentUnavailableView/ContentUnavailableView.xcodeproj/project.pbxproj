@@ -15,6 +15,7 @@
 		B1FD64ED2AA7430C00849061 /* ContentUnavailableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD64EC2AA7430C00849061 /* ContentUnavailableViewUITests.swift */; };
 		B1FD64EF2AA7430C00849061 /* ContentUnavailableViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD64EE2AA7430C00849061 /* ContentUnavailableViewUITestsLaunchTests.swift */; };
 		B1FD64FD2AA7439D00849061 /* Title+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD64FC2AA7439D00849061 /* Title+Description.swift */; };
+		B1FD64FF2AA7448F00849061 /* Title_Label+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD64FE2AA7448F00849061 /* Title_Label+Description.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B1FD64EC2AA7430C00849061 /* ContentUnavailableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentUnavailableViewUITests.swift; sourceTree = "<group>"; };
 		B1FD64EE2AA7430C00849061 /* ContentUnavailableViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentUnavailableViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1FD64FC2AA7439D00849061 /* Title+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Title+Description.swift"; sourceTree = "<group>"; };
+		B1FD64FE2AA7448F00849061 /* Title_Label+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Title_Label+Description.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B1FD64FC2AA7439D00849061 /* Title+Description.swift */,
+				B1FD64FE2AA7448F00849061 /* Title_Label+Description.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1FD64FF2AA7448F00849061 /* Title_Label+Description.swift in Sources */,
 				B1FD64D42AA7430B00849061 /* ContentView.swift in Sources */,
 				B1FD64D22AA7430B00849061 /* ContentUnavailableViewApp.swift in Sources */,
 				B1FD64FD2AA7439D00849061 /* Title+Description.swift in Sources */,
