@@ -12,9 +12,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Title_Description().padding()
+            Spacer(minLength: 100)
             Title_Label_Description().padding(EdgeInsets(top: 5.0, leading: 5.0, bottom: 5.0, trailing: 5.0))
-            Title_Description_Actions()
-            Title_Description_Actions_2()
+            Title_Description_Actions().padding()
+            Title_Description_Actions_2().padding()
         }
         .padding()
     }

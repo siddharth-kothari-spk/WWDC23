@@ -14,7 +14,8 @@ struct Title_Description: View {
         } description: {
             Text("Search query did not yield any results")
         }
-
+        ContentUnavailableView.search
+        ContentUnavailableView.search(text: "iPhones")
     }
 }
 
