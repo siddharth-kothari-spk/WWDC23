@@ -13,6 +13,7 @@ struct ContentView: View {
         VStack {
             Title_Description().padding()
             Title_Label_Description().padding(EdgeInsets(top: 5.0, leading: 5.0, bottom: 5.0, trailing: 5.0))
+            Title_Description_Actions()
         }
         .padding()
     }
